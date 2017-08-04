@@ -1,0 +1,17 @@
+<div class="col-md-6">
+  <h2>Listado de To Do's no completados</h2>
+  <% @no_completados.each do |todo| %>
+      <div class="well">
+        <%= "Descripción :   #{todo.description} -  Completado? : #{todo.completed}"%>
+      </div>
+  <% end %>
+</div>
+
+<div class="col-md-6">
+<h2>Listado de To Do's completados</h2>
+  <% @completados.each do |todo| %>
+      <div class="well">
+        <%= "Descripción :   #{todo.description} -  Completado? : #{todo.completed}"%>
+      </div>
+  <% end %>
+</div>
