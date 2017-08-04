@@ -4,7 +4,7 @@
 <div>
         <% @todos.each do |todo| %>
             <div class="well"> <h3> <%= link_to todo.description, todo %> </h3> 
-            <p> <%= link_to "Editar", edit_url(todo) %> 
+            <p> <%= link_to "Editar", edit_todos_path(todo) %> 
                     <%= link_to "Borrar", todo, method: :delete %> </p>
             </div>
         <% end %>
